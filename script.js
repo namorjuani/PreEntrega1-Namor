@@ -8,6 +8,8 @@ function promotionAlert() {
         alert("¡Hola! " + customerEmail + " Tenemos una promoción especial para ti.");
     }
 }
+promotionAlert();
+
 
 //Ejemplo 2 de Switch y Function de compra de celulares.
 // let celular = prompt("Ingrese celular que desea comprar").toLowerCase()
@@ -42,7 +44,7 @@ do {
   // Verificar si el saldo es suficiente para realizar la compra
   if (saldoInicial >= costoTotal) {
     saldoInicial -= costoTotal; // restar el costo total de la compra del saldo del usuario
-    console.log("Compra exitosa! Su nuevo saldo es de $" + saldoInicial);
+    alert("Compra exitosa! Su nuevo saldo es de $" + saldoInicial);
 
     // Preguntar si el usuario desea seguir comprando
     seguirComprando = confirm("¿Desea comprar más celulares?");
