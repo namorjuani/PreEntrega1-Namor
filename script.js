@@ -2,10 +2,11 @@
 // Lista de correos electrónicos de clientes
 const customerEmails = ["pepito@example.com", "daniel@example.com", "maria@example.com"];
 function promotionAlert() {
+  const promotion = prompt("Ingresa la promoción especial:")
     // Envío de correo electrónico a cada cliente
     for (let i = 0; i < customerEmails.length; i++) {
         const customerEmail = customerEmails[i];
-        alert("¡Hola! " + customerEmail + " Tenemos una promoción especial para ti.");
+        alert("¡Hola! " + customerEmail + " Tenemos una promoción especial para ti." + promotion);
     }
 }
 promotionAlert();
